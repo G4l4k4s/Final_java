@@ -23,5 +23,50 @@ public class Vehiculo {
         this.kilometraje = kilometraje;
     }
 
-    // Métodos de comportamiento
+    //getters
+    public String getPlaca() {
+        return placa;
+    }
+
+    public double getCombustible() {
+        return combustible;
+    }
+
+    public double getRendimiento() {
+        return rendimiento;
+    }
+
+    public double getKilometraje() {
+        return kilometraje;
+    }
+
+    //setters
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public void setCombustible(double combustible) {
+        if (combustible >= 0 && combustible <= 50) {
+            this.combustible = combustible;
+        } else {
+            System.out.println("Combustible invalido");
+        }
+    }
+
+    public void setRendimiento(double rendimiento) {
+        if (rendimiento > 0) {
+            this.rendimiento = rendimiento;
+        } else {
+            System.out.println("Rendimiento invalido");
+        }
+    }
+
+    public void setKilometraje(double kilometraje) {
+        if (kilometraje >= 0) {
+            this.kilometraje = kilometraje;
+        } else {
+            System.out.println("Kilometraje invalido");
+        }
+    }
+
 }
