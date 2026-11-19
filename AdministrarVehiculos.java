@@ -24,6 +24,40 @@ public class AdministrarVehiculos {
 
             switch (opcion) {
 
+                case 1:
+                    Vehiculo v = new Vehiculo();
+                    vehiculos.add(v);
+                    System.out.println("Vehiculo creado correctamente");
+                    break;
+
+                case 2:
+                    entrada.nextLine();
+
+                    System.out.print("Ingrese la placa: ");
+                    String placa = entrada.nextLine();
+
+                    System.out.print("Ingrese el combustible: ");
+                    double combustible = entrada.nextDouble();
+
+                    System.out.print("Ingrese el rendimiento: ");
+                    double rendimiento = entrada.nextDouble();
+
+                    System.out.print("Ingrese el kilometraje: ");
+                    double kilometraje = entrada.nextDouble();
+
+                    if (combustible >= 0 && combustible <= 50
+                            && rendimiento > 0 && kilometraje >= 0
+                            && !placa.trim().isEmpty()) {
+
+                        Vehiculo nuevo = new Vehiculo(
+                                placa, combustible, rendimiento, kilometraje);
+                        vehiculos.add(nuevo);
+                        System.out.println("Vehiculo creado correctamente");
+                    } else {
+                        System.out.println("Datos invalidos");
+                    }
+                    break;
+
                 case 7:
                     System.out.println("Programa finalizado");
                     break;
