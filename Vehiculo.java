@@ -15,7 +15,7 @@ public class Vehiculo {
         kilometraje = 0.0;
     }
 
-
+    // Constructor con parámetros
     public Vehiculo(String placa, Double combustible, Double rendimiento, Double kilometraje) {
         this.placa = placa;
         this.combustible = combustible;
