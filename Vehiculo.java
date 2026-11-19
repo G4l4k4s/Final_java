@@ -1,12 +1,27 @@
 public class Vehiculo {
-    private String marca;
-    private String modelo;
-    private int anio;
 
-    public Vehiculo(String marca, String modelo, int anio) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.anio = anio;
-   
+    // Atributos
+    private String placa;
+    private Double combustible;
+    private Double rendimiento;
+    private Double kilometraje;
+
+
+    // Constructor por defecto 
+    public Vehiculo() {
+        placa = "AAA000";
+        combustible = 20.0;
+        rendimiento = 40.0;
+        kilometraje = 0.0;
     }
+
+
+    public Vehiculo(String placa, Double combustible, Double rendimiento, Double kilometraje) {
+        this.placa = placa;
+        this.combustible = combustible;
+        this.rendimiento = rendimiento;
+        this.kilometraje = kilometraje;
+    }
+
+    // Métodos de comportamiento
 }
