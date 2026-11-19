@@ -69,4 +69,10 @@ public class Vehiculo {
         }
     }
 
+    public void mostrarInformacion() {
+        System.out.println("Placa: " + placa);
+        System.out.println("Combustible: " + combustible + " gal/L");
+        System.out.println("Rendimiento: " + rendimiento + " km/gal");
+        System.out.println("Kilometraje: " + kilometraje + " km");
+    }
 }
